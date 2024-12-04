@@ -13,16 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+title: Shade Lab
+email: eshipman@shadelab.org
+description: >-
+  A rigorous exploration of artificial intelligence for software engineers,
+  emphasizing both mathematical foundations and cutting-edge techniques.
+  Written for developers who want to truly understand the mechanics behind
+  modern AI.
+url: "https://shadelab.org"
+repository: "eshipman/eshipman.github.io"
+github_username: eshipman
+minimal_mistakes_skin: dark
 search: true
+breadcrumbs: true
+show_date: true
+read_time: true
 
 # Build settings
 markdown: kramdown
@@ -31,7 +36,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York
 
 include:
   - _pages
@@ -58,34 +63,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Evan Shipman"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Dad, husband, software engineer, and indie developer. Creator of ChatForge and owner of Verbli."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/eshipman"
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/eshipman.bsky.social"
+    - label: "Buy Me A Coffee"
+      icon: "fa-duotone fa-solid fa-cup-togo"
+      url: "https://buymeacoffee.com/eshipman"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/eshipman"
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/eshipman.bsky.social"
+    - label: "Buy Me A Coffee"
+      icon: "fa-duotone fa-solid fa-cup-togo"
+      url: "https://buymeacoffee.com/eshipman"
 
 defaults:
   # _posts
@@ -106,6 +108,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-dark"
+    issue_term: "pathname"
+    label: "comment"
 
 category_archive:
   type: liquid
