@@ -74,7 +74,7 @@ author:
       icon: "fa-brands fa-bluesky"
       url: "https://bsky.app/profile/eshipman.bsky.social"
     - label: "Buy Me A Coffee"
-      icon: "fa-duotone fa-solid fa-cup-togo"
+      icon: "fa-solid fa-mug-hot"
       url: "https://buymeacoffee.com/eshipman"
 
 footer:
@@ -86,7 +86,7 @@ footer:
       icon: "fa-brands fa-bluesky"
       url: "https://bsky.app/profile/eshipman.bsky.social"
     - label: "Buy Me A Coffee"
-      icon: "fa-duotone fa-solid fa-cup-togo"
+      icon: "fa-solid fa-mug-hot"
       url: "https://buymeacoffee.com/eshipman"
 
 defaults:
