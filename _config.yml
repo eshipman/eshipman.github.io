@@ -37,6 +37,11 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-NGZBNFVXZK"
+    anonymize_ip: false
 
 include:
   - _pages
@@ -67,18 +72,24 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Dad, husband, software engineer, and indie developer. Creator of ChatForge and owner of Verbli."
   links:
+    - label: "Verbli"
+      icon: "fa-solid fa-v"
+      url: "https://verbli.org"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eshipman"
     - label: "Bluesky"
       icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/eshipman.bsky.social"
+      url: "https://bsky.app/profile/shadelab.org"
     - label: "Buy Me A Coffee"
       icon: "fa-solid fa-mug-hot"
       url: "https://buymeacoffee.com/eshipman"
 
 footer:
   links:
+    - label: "Verbli"
+      icon: "fa-solid fa-v"
+      url: "https://verbli.org"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eshipman"
@@ -98,9 +109,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"
